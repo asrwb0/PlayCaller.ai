@@ -1,12 +1,13 @@
-// src/components/Navbar.jsx
-
 import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav style={styles.nav}>
-      <h2 style={styles.logo}>PlayCaller</h2>
+      <Link to="/" style={{ ...styles.logo, textDecoration: "none", color: "white" }}>
+        PlayCaller
+      </Link>
+
       <div style={styles.links}>
         <Link to="/" style={styles.link}>Home</Link>
         <Link to="/about" style={styles.link}>About</Link>
@@ -27,6 +28,9 @@ const styles = {
   },
   logo: {
     margin: 0,
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    cursor: "pointer", // makes it feel clickable
   },
   links: {
     display: "flex",
