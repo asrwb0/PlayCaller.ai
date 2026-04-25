@@ -6,3 +6,5 @@ node_modules
 /backend/venv/
 /backend/code/venv/
 /backend/code/__pycache__/
+
+node_modules/
